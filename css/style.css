@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: goldenrod;
+    background-color: black;
     font-size: 16px;
 }
 /*Generic css Block - Start */
@@ -14,7 +14,7 @@ h1, h2, h3, h4 h5, h6 {
 }
 .container {
     width: 100%;
-    max-width:1260px;
+    max-width:1320px;
     margin: 0 auto;
 }
 /*Generic css Block - End*/
@@ -31,12 +31,33 @@ header {
                 display: flex;
                 list-style: none;
                 flex-direction: row;
-                gap: 1rem;
+                gap: 3rem;
+                
                 li {
                     color: white;
                     a {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        font-size: 1rem; 
                        color: white;
                        text-decoration: none;
+                       position: relative;
+                       &:before {
+                        content: " " ;
+                        position: absolute;
+                        left: 0.1875rem;
+                        bottom: -0.5rem;
+                        right: 0.1875rem;
+                        height: 0.25rem;
+                        color: #ebbe31;
+                        background-color: transparent;
+                        transition: 0.3s all ease-in-out;
+                       }
+                       &:hover {
+                        &::before{
+                            background-color: #ebbe31;
+                        }
+                       }
                     }
                 }
             }
