@@ -5,5 +5,43 @@
 
 
 body {
-    background-color: #fff;
+    background-color: goldenrod;
+    font-size: 16px;
 }
+/*Generic css Block - Start */
+h1, h2, h3, h4 h5, h6 {
+
+}
+.container {
+    width: 100%;
+    max-width:1260px;
+    margin: 0 auto;
+}
+/*Generic css Block - End*/
+
+/* Header Css - Start*/
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navigation {
+            ul {
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                gap: 1rem;
+                li {
+                    color: white;
+                    a {
+                       color: white;
+                       text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Header Css - End*/
