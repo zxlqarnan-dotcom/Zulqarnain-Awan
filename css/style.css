@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: black;
+    background-color: goldenrod;
     font-size: 16px;
 }
 /*Generic css Block - Start */
@@ -17,6 +17,9 @@ h1, h2, h3, h4 h5, h6 {
     max-width:1320px;
     margin: 0 auto;
 }
+.d-flex{
+    display: flex;
+}
 /*Generic css Block - End*/
 
 /* Header Css - Start*/
@@ -26,20 +29,25 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 0 0 0;
+        margin: 0 0 0 0;
         .navigation {
+            
             ul {
                 display: flex;
                 list-style: none;
                 flex-direction: row;
-                gap: 3rem;
+                gap: 2rem;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
                 
                 li {
-                    color: white;
+                    color: black;
                     a {
                         font-family: "Montserrat", sans-serif;
                         font-weight: 700;
                         font-size: 1rem; 
-                       color: white;
+                       color: black;
                        text-decoration: none;
                        position: relative;
                        &:before {
@@ -49,17 +57,31 @@ header {
                         bottom: -0.5rem;
                         right: 0.1875rem;
                         height: 0.25rem;
-                        color: #ebbe31;
+                        color: black;
                         background-color: transparent;
                         transition: 0.3s all ease-in-out;
                        }
                        &:hover {
                         &::before{
-                            background-color: #ebbe31;
+                            background-color: black;
                         }
                        }
                     }
                 }
+            }
+        }
+        .search-form {
+            background-color: #ebbe31;
+            position: relative;
+            .icon-search{
+                position: absolute;
+                left: 0.5rem;
+                top: 0.5rem;
+                z-index: 1;
+            }
+            .input-search{
+                border: none;
+                padding: 0.5rem 0.5rem 0.5rem 2rem;
             }
         }
     }
